@@ -1,0 +1,10 @@
+<div id="countries">
+    {{# each countries }}
+        <a href="countries/{{ alpha2Code }}">
+            <div class="country">
+                <img src="{{ flag }}">
+                <p>{{ name }}</p>
+            </div>
+        </a>
+    {{/ each }}
+</div>

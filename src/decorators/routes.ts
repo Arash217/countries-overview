@@ -9,7 +9,7 @@ interface RouteHandlerDescriptor extends PropertyDescriptor {
 
 function routeBinder(method: string): Function {
     return function(path: string): Function {
-        return function(target: any, key: string, desc: RouteHandlerDescriptor) {
+        return function(target: any, key: string, desc: RouteHandlerDescriptor): void {
             Reflect.defineMetadata(MetadataKeys.path, path, target, key);
             Reflect.defineMetadata(MetadataKeys.method, method, target, key);
         };
