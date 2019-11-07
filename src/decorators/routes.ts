@@ -1,6 +1,6 @@
 import 'reflect-metadata';
-import { Methods } from './Methods';
-import { MetadataKeys } from './MetadataKeys';
+import { Methods } from '../enums/Methods';
+import { MetadataKeys } from '../enums/MetadataKeys';
 import { RequestHandler } from 'express';
 
 interface RouteHandlerDescriptor extends PropertyDescriptor {

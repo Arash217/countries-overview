@@ -1,7 +1,7 @@
 import 'reflect-metadata';
 import { AppRouter } from '../AppRouter';
-import { Methods } from './Methods';
-import { MetadataKeys } from './MetadataKeys';
+import { Methods } from '../enums/Methods';
+import { MetadataKeys } from '../enums/MetadataKeys';
 import { NextFunction, RequestHandler, Request, Response } from 'express';
 
 function requestPropValidators<K extends keyof Request>(prop: K, keys: string[]): RequestHandler {

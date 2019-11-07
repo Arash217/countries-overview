@@ -1,5 +1,5 @@
 import 'reflect-metadata';
-import { MetadataKeys } from './MetadataKeys';
+import { MetadataKeys } from '../enums/MetadataKeys';
 import { RequestHandler } from 'express';
 
 export function use(middleware: RequestHandler) {
