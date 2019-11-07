@@ -3,7 +3,7 @@
 ## Summary
 A simple Typescript version of the [Javascript app](https://github.com/Arash217/performance-matters-1819) that I previously made to show an overview of all countries.
 
-![Overview](../master/docs/app.png)
+![Overview](../src/master/docs/app.png)
 
 ## 1. Usage
 
