@@ -2,7 +2,6 @@ import { Request, Response } from 'express';
 import { controller, get } from '../decorators';
 import { RepositoryFactory } from '../factories/RepositoryFactory';
 import { ArrayUtil } from '../utils/ArrayUtil';
-import { Country } from '../models/Country';
 
 const countriesApi = RepositoryFactory.getDefaultCountriesApi();
 
