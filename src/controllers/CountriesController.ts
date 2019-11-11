@@ -15,7 +15,7 @@ class CountriesController {
         let countries = await countriesApi.getAll();
 
         if (search) {
-            countries = ArrayUtil.filter<Country>(countries, 'name', search);
+            countries = ArrayUtil.filter(countries, 'name', search);
         }
 
         res.render('countries', {
