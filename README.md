@@ -42,6 +42,7 @@ npm dev
 - [ ] Time-based disk cache
 - [ ] Error handling
 - [ ] Production build
+- [ ] Tests
 
 ## Licence
 MIT © [Arash Paknezad](https://github.com/Arash217)
