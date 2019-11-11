@@ -1,13 +1,10 @@
 import { KeysMatching } from './KeyMatching';
 
 export class ArrayUtil {
-    static filter<T, V>(entities: T[], key: KeysMatching<T, V>, search: string): T[] {
+    static filter<T>(entities: T[], key: KeysMatching<T, string>, search: string): T[] {
         return entities.filter((entity: T) => {
-            const value = entity[key];
-
-            if (typeof value === 'string') {
-                return value.toLowerCase().includes(search.toLowerCase());
-            }
+            const value = (entity[key] as unknown) as string;
+            return value.toLowerCase().includes(search.toLowerCase());
         });
     }
 }
