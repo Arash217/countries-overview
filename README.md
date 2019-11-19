@@ -27,6 +27,7 @@ npm dev
 - Overview page of countries
 - Details page of a country
 - Filtering countries
+- Sorting countries
 
 ## 3. API
 
