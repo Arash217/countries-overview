@@ -37,7 +37,7 @@ npm dev
 - [x] Overview page of countries
 - [x] Details page of a country
 - [x] Filtering countries
-- [ ] Sorting countries
+- [x] Sorting countries
 - [x] Memory cache
 - [ ] Disk cache
 - [ ] Error handling
