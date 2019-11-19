@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import { controller, get } from '../decorators';
 import { RepositoryFactory } from '../factories/RepositoryFactory';
 import { ArrayUtil } from '../utils/ArrayUtil';
-import { Sort } from '../enums/Sort';
+import { Sort as SortOptions } from '../enums/Sort';
 
 const countriesApi = RepositoryFactory.getDefaultCountriesApi();
 
@@ -11,8 +11,8 @@ class CountriesController {
     @get('/')
     async getCountries(req: Request, res: Response): Promise<void> {
         const search: string = req.query.search || '';
-        const sort: string = req.query.sort || Sort.ASC;
-        const ascending = sort === Sort.ASC;
+        const sort: string = req.query.sort || SortOptions.ASC;
+        const ascending = sort === SortOptions.ASC;
 
         let countries = await countriesApi.getAll();
 
@@ -29,6 +29,7 @@ class CountriesController {
             search,
             sort,
             ascending,
+            SortOptions,
         });
     }
 

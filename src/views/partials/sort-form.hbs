@@ -1,10 +1,10 @@
 <form id="sort-container" action="/countries" method="get">
     <label for="sort-select">Sort by name:</label>
     <select id="sort-select" name="sort">
-        <option value="asc" {{# if ascending }} selected{{/ if }}>
+        <option value="{{ SortOptions.ASC }}" {{# if ascending }} selected{{/ if }}>
             A-Z
         </option>
-        <option value="desc" {{# unless ascending }} selected {{/ unless }}>
+        <option value="{{ SortOptions.DESC }}" {{# unless ascending }} selected {{/ unless }}>
             Z-A
         </option>
     </select>
