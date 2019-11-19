@@ -38,8 +38,8 @@ npm dev
 - [x] Details page of a country
 - [x] Filtering countries
 - [ ] Sorting countries
-- [x] Time-based memory cache
-- [ ] Time-based disk cache
+- [x] Memory cache
+- [ ] Disk cache
 - [ ] Error handling
 - [ ] Production build
 - [ ] Tests
