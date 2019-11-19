@@ -1,4 +1,5 @@
 <form id="search-input-container" action="/countries" method="get">
     <label for="search-input" class="label">Search: </label>
     <input id="search-input" name="search" value="{{ search }}" placeholder="Netherlands for example..." autofocus>
+    <input type="hidden" id="order-input" name="sort" value="{{ sort }}">
 </form>

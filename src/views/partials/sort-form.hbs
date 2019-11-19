@@ -1,0 +1,13 @@
+<form id="sort-container" action="/countries" method="get">
+    <label for="sort-select">Sort by name:</label>
+    <select id="sort-select" name="sort">
+        <option value="asc" {{# if ascending }} selected{{/ if }}>
+            A-Z
+        </option>
+        <option value="desc" {{# unless ascending }} selected {{/ unless }}>
+            Z-A
+        </option>
+    </select>
+    <input type="hidden" id="search" name="search" value="{{ search }}">
+    <input type="submit" id="sort-select-submit" value="submit">
+</form>
